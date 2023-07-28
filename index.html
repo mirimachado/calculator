@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <style>
+        .main {
+          
+            padding: 3px;
+            width: 230px;
+            height: 330px;
+            margin: 0 auto;
+            background-color: gray;
+            border-radius: 4%;
+            border: solid 4px rgb(100, 98, 98);
+
+
+        }
+
+        .nummaincolor {
+
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin-top: 3px;
+            border-radius: 15%;
+        
+        }
+
+        .numpur {
+
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color: rgb(254, 194, 125);
+            border-radius: 15%;
+
+
+
+        }
+
+        .numora {
+
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color:  rgb(243, 162, 132);
+            border-radius: 15%;
+
+
+        }
+
+        .numblue {
+
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color:  rgb(243, 162, 132);
+            border-radius: 15%;
+
+
+        }
+
+        .numpin{
+
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color:  rgb(243, 162, 132);
+            border-radius: 15%;
+        
+        }
+
+        .numgre {
+
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color:  rgb(243, 162, 132);
+            border-radius: 15%;
+
+
+        }
+
+        .textmaincolor {
+            background-color: rgb(232, 232, 217);
+            display: block;
+            margin: 0 auto;
+            margin-top: 5px;
+        }
+
+        body {
+            text-align: center;
+            background-color: antiquewhite;
+            margin: 100px
+         
+        }
+
+        .classe-div-main{
+            font-family: OCR A Std, monospace;
+
+
+        }
+
+        input:hover {
+      background-color: rgba(250, 216, 184, 0.912);
+
+    }
+
+       
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <div class="main">
+        <div class="classe-div-main"><strong>CALCULADORA</strong></div>
+        <form action="" name="calculator">
+
+           
+            <input type="text" class="textmaincolor" name="text1" disabled>
+
+            <input type="text" class="textmaincolor" name="text12" placeholder="Limpar" onclick="location.reload()"><br>
+
+            <input type="button" class="nummaincolor" name="btn9" value="9" onclick="displaynum(btn9.value)">
+            <input type="button" class="nummaincolor" name="btn8" value="8" onclick="displaynum(btn8.value)">
+            <input type="button" class="nummaincolor" name="btn7" value="7" onclick="displaynum(btn7.value)">
+            <input type="button" class="numblue" name="addbtn" value="+" onclick="displaynum(addbtn.value)"><br>
+
+
+            <input type="button" class="nummaincolor" name="btn6" value="6" onclick="displaynum(btn6.value)">
+            <input type="button" class="nummaincolor" name="btn5" value="5" onclick="displaynum(btn5.value)">
+            <input type="button" class="nummaincolor" name="btn4" value="4" onclick="displaynum(btn4.value)">
+            <input type="button" class="numpin" name="subbtn" value="-" onclick="displaynum(subbtn.value)"><br>
+
+            <input type="button" class="nummaincolor" name="btn3" value="3" onclick="displaynum(btn3.value)">
+            <input type="button" class="nummaincolor" name="btn2" value="2" onclick="displaynum(btn2.value)">
+            <input type="button" class="nummaincolor" name="btn1" value="1" onclick="displaynum(btn1.value)">
+            <input type="button" class="numgre" name="mulbtn" value="*" onclick="displaynum(mulbtn.value)"><br>
+
+            <input type="button" class="nummaincolor" name="dot" value="." onclick="displaynum(dot.value)">
+            <input type="button" class="nummaincolor" name="btn0" value="0" onclick="displaynum(btn0.value)">
+            <input type="button" class="numpur" name="eqlbtn" value="=" onclick="text1.value=eval(text1.value)">
+            <input type="button" class="numora" name="divbtn" value="/" onclick="displaynum(divbtn.value)"><br>
+        </form>
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
